@@ -6,5 +6,7 @@ def page1():
     st.title("Messaged is locked")
     password = st.text_input("enter password", "password")
     if password=="bob":
-        st.Page(page2, title="Second page", icon=":material/favorite:"),
+        st.Page(page2, title="Second page", icon=":material/favorite:")
+    StreamlitPage.run()
+        
 
