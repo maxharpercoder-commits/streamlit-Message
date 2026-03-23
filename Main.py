@@ -7,6 +7,7 @@ def page1():
     pg.run()
 else:
     pass
+    
 pg = st.navigation([
 st.Page(page1, title="First page", icon="🔥"),
 st.Page(page2, title="Second page", icon=":material/favorite:"),
