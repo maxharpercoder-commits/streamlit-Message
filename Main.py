@@ -5,9 +5,6 @@ def page2():
 def page1():
     st.text('Messages is locked')
     pg.run()
-else:
-    pass
-    
 pg = st.navigation([
 st.Page(page1, title="First page", icon="🔥"),
 st.Page(page2, title="Second page", icon=":material/favorite:"),
