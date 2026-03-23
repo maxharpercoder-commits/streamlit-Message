@@ -4,8 +4,6 @@ def page2():
     st.text('Messages is unlocked')
 def page1():
     st.text('Messages is locked')
-    password = st.text_input('Enter the password to unlock Messages', type='password')
-if password == "RUNEATM11@#":
     pg.run()
 else:
     pass
