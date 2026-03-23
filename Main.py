@@ -13,5 +13,3 @@ def page1():
 page1_obj = st.Page(page1, title="First page")
 page2_obj = st.Page(page2, title="Second page", icon=":material/favorite:")
 
-pg = st.navigation([page1_obj, page2_obj])
-pg.run()
