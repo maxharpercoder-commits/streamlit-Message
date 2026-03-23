@@ -1,5 +1,4 @@
 import streamlit as st
-password=""
 def page2():
     st.title("Second page")
 
