@@ -12,4 +12,5 @@ def page1():
 
 page1_obj = st.Page(page1, title="First page")
 page2_obj = st.Page(page2, title="Second page", icon=":material/favorite:")
-
+pg=st.switch_page(page1_obj)
+pg.run
