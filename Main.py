@@ -1,12 +1,14 @@
+# streamlit_app.py
 import streamlit as st
+
+def page1():
+    st.title("Login")
+    password = st.text_input("Enter password", type="password")
+    if password == "bob":
+        st.switch_page("page2.py")
+
 def page2():
     st.title("Second page")
 
-def page1():
-    st.title("Messaged is locked")
-    password = st.text_input("enter password", "password")
-    if password=="bob":
-        st.Page(page2, title="Second page", icon=":material/favorite:")
-    StreamlitPage.run()
-        
-
+pg = st.navigation([st.Page(page1, title="Login"), st.Page(page2, title="Second page")])
+pg.run()
