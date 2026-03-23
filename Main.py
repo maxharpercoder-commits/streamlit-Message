@@ -5,7 +5,7 @@ def page1():
     st.title("Login")
     password = st.text_input("Enter password", type="password")
     if password == "bob":
-        st.switch_page(page2)
+        st.switch_page(page2())
 
 def page2():
     st.title("Second page")
