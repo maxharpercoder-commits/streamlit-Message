@@ -4,7 +4,8 @@ def page2():
     st.title("Second page")
 
 def page1():
-    st.title("Second page")
+    st.title("hi!")
+    st.text_input("me?")
 
 pg = st.navigation([
     st.Page(page1, title="First page", icon="🔥"),
