@@ -1,14 +1,11 @@
 import streamlit as st
-
+password=""
 def page2():
     st.title("Second page")
 
 def page1():
-    st.title("hi!")
-    st.text_input("me?")
+    st.title("Messaged is locked")
+    global password=st.text_input("enter password")
+    if password=="bob":
+        st.Page(page2, title="Second page", icon=":material/favorite:"),
 
-pg = st.navigation([
-    st.Page(page1, title="First page", icon="🔥"),
-    st.Page(page2, title="Second page", icon=":material/favorite:"),
-])
-pg.run()
