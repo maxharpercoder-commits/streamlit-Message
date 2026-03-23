@@ -1,4 +1,5 @@
 import streamlit as st
+password = ""
 def page2():
     st.text('Messages is unlocked')
 def page1():
